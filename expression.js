@@ -389,7 +389,7 @@ var Expression = function() {
     
     var constants = {
         'pi' : new NumberToken(Math.PI, '&pi;'),
-        '2pi' : new NumberToken(2 * Math.PI, '2&pi;')
+        'tau' : new NumberToken(2 * Math.PI, '&tau;')
     }
     
     /**
