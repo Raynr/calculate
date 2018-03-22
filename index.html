@@ -1,4 +1,4 @@
-<!doctype html>    
+﻿<!doctype html>    
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -12,34 +12,35 @@
     <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    
-    <link rel="stylesheet" href="css.css" type="text/css" />
-    
+
+    <!--<link rel="stylesheet" href="css.css" type="text/css" />-->
+    <link rel="stylesheet" href="Android.css" type="text/css" />
+
     <script src='expression.js'></script>
     <script src="calculator.js"></script>
-    
+
     <script>
-    
-    var calc;
-    
-    // init
-    addEventListener('DOMContentLoaded', function() {
-        
-        calc = new Calculator();
-        
-        // prevent page scrolling
-        document.body.addEventListener('touchmove', function(e) {
-            
-            e.preventDefault();
-            
-            return false;
-            
+
+        var calc;
+
+        // init
+        addEventListener('DOMContentLoaded', function () {
+
+            calc = new Calculator();
+
+            // prevent page scrolling
+            document.body.addEventListener('touchmove', function (e) {
+
+                e.preventDefault();
+
+                return false;
+
+            }, false);
+
         }, false);
-    
-    }, false);
-    
+
     </script>
-    
+
 </head>
 
 <body>
@@ -70,7 +71,7 @@
                 <button class="function" data-function="cos">cos</button>
                 <button class="function" data-function="tan">tan</button>
                 <button class="constant" data-constant="pi">&pi;</button>
-                <button class="constant" data-constant="2pi">2&pi;</button>
+                <button class="constant" data-constant="tau">&tau;</button>
                 <button class="function" data-function="sin_i">sin<sup>-1</sup></button>
                 <button class="function" data-function="cos_i">cos<sup>-1</sup></button>
                 <button class="function" data-function="tan_i">tan<sup>-1</sup></button>
